@@ -1,6 +1,7 @@
 public class Product {
     private int id;
     private String name;
+    @PriceAnnotation(priceAnnotation = 0.00)
     private double price;
 
     public Product(int id, String name, double price) {
