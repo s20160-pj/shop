@@ -12,7 +12,9 @@ public class Main {
         Product product1 = new Product(2, "Bread", 2.50);
         Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
         Set<ConstraintViolation<Product>> validate = validator.validate(product);
+        Set<ConstraintViolation<Shop>> validate1 = validator.validate(shop);
         System.out.println(validate);
+        System.out.println(validate1);
         shop.getSoldProducts().add(product);
         shop.getSoldProducts().add(product1);
         System.out.println(service.getSoldProductsReport());

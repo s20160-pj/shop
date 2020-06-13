@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Shop {
     private int id;
+    @ShopNameAnnotation(shopNameAnnotation = "Biedronka")
     private String name;
     private List<Product> availableProducts = new ArrayList();
     private List<Product> soldProducts = new ArrayList();

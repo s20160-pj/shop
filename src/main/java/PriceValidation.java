@@ -1,7 +1,7 @@
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-public class Validation implements ConstraintValidator<PriceAnnotation, Double > {
+public class PriceValidation implements ConstraintValidator<PriceAnnotation, Double > {
     @Override
     public void initialize(PriceAnnotation constraintAnnotation) {
 

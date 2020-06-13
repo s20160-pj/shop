@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-@Constraint(validatedBy = Validation.class)
+@Constraint(validatedBy = ShopNameValidation.class)
 public @interface ShopNameAnnotation {
     public String shopNameAnnotation() default "Biedronka";
     String message() default "Nazwa sklepu nie może być krótsza niż 6 znaków, oraz nie może zawierać cyfr";
