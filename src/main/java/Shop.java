@@ -4,14 +4,12 @@ import java.util.List;
 public class Shop {
     private int id;
     private String name;
-    private List availableProducts = new ArrayList();
-    private List soldProducts = new ArrayList();
+    private List<Product> availableProducts = new ArrayList();
+    private List<Product> soldProducts = new ArrayList();
 
-    public Shop(int id, String name, List availableProducts, List soldProducts) {
+    public Shop(int id, String name) {
         this.id = id;
         this.name = name;
-        this.availableProducts = availableProducts;
-        this.soldProducts = soldProducts;
     }
 
     public Shop() {
@@ -34,19 +32,19 @@ public class Shop {
         this.name = name;
     }
 
-    public List getAvailableProducts() {
+    public List<Product> getAvailableProducts() {
         return availableProducts;
     }
 
-    public void setAvailableProducts(List availableProducts) {
+    public void setAvailableProducts(List<Product> availableProducts) {
         this.availableProducts = availableProducts;
     }
 
-    public List getSoldProducts() {
+    public List<Product> getSoldProducts() {
         return soldProducts;
     }
 
-    public void setSoldProducts(List soldProducts) {
+    public void setSoldProducts(List<Product> soldProducts) {
         this.soldProducts = soldProducts;
     }
 }

@@ -3,11 +3,10 @@ import java.util.List;
 
 public class Customer {
     private int id;
-    private List purchasedItems = new ArrayList();
+    private List<Product> purchasedItems = new ArrayList();
 
-    public Customer(int id, List purchasedItems) {
+    public Customer(int id) {
         this.id = id;
-        this.purchasedItems = purchasedItems;
     }
 
     public Customer() {
@@ -22,11 +21,11 @@ public class Customer {
         this.id = id;
     }
 
-    public List getPurchasedItems() {
+    public List<Product> getPurchasedItems() {
         return purchasedItems;
     }
 
-    public void setPurchasedItems(List purchasedItems) {
+    public void setPurchasedItems(List<Product> purchasedItems) {
         this.purchasedItems = purchasedItems;
     }
 }
